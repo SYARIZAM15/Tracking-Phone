@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Phone Tracker Demo</h2>
+
+    <form method="POST">
+        <input name="number" placeholder="Enter phone number">
+        <button type="submit">Track</button>
+    </form>
+
+    {% if location %}
+        <h3>Location: {{ location }}</h3>
+    {% endif %}
+</body>
+</html>
